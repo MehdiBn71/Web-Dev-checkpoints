@@ -1,0 +1,47 @@
+# 1. Create folder
+mkdir learn_git
+
+# 2. Move into folder
+cd learn_git
+
+# 3. Create third.txt
+touch third.txt
+
+# 4. Initialize Git repo
+git init
+
+# 5. Add third.txt to staging area
+git add third.txt
+
+# 6. Commit with message
+git commit -m "adding third.txt"
+
+# 7. Show commit history
+git log
+
+# 8. Create fourth.txt
+touch fourth.txt
+
+# 9. Add fourth.txt to staging
+git add fourth.txt
+
+# 10. Commit with message
+git commit -m "adding fourth.txt"
+
+# 11. Remove third.txt
+rm third.txt
+
+# 12. Add change to staging area
+git add .
+
+# 13. Commit with message
+git commit -m "removing third.txt"
+
+# 14. Show commit history
+git log
+
+# 15. Change global pager setting
+git config --global core.pager cat
+
+# 16. List all global Git configurations
+git config --global --list
