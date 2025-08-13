@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Menu</title>
+</head>
+<body>
+    <h1>Delicious Bites Menu</h1>
+
+    <!-- Appetizers Section -->
+    <h2>Appetizers</h2>
+    <ul>
+        <li>
+            <strong>Caprese Salad</strong>
+            <p>Fresh tomatoes, mozzarella, and basil drizzled with balsamic glaze.</p>
+            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&h=150" alt="Caprese Salad">
+        </li>
+        <li>
+            <strong>Bruschetta</strong>
+            <p>Toasted bread topped with diced tomatoes, garlic, and olive oil.</p>
+            <img src="https://images.pexels.com/photos/5938/food-salad-restaurant-healthy.jpg?auto=compress&cs=tinysrgb&h=150" alt="Bruschetta">
+        </li>
+        <li>
+            <strong>Stuffed Mushrooms</strong>
+            <p>Button mushrooms filled with cream cheese, herbs, and breadcrumbs.</p>
+            <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&h=150" alt="Stuffed Mushrooms">
+        </li>
+    </ul>
+
+    <!-- Main Courses Section -->
+    <h2>Main Courses</h2>
+    <ul>
+        <li>
+            <strong>Grilled Salmon</strong>
+            <p>Salmon fillet seasoned and grilled to perfection, served with lemon butter sauce.</p>
+            <img src="https://images.pexels.com/photos/357756/pexels-photo-357756.jpeg?auto=compress&cs=tinysrgb&h=150" alt="Grilled Salmon">
+        </li>
+        <li>
+            <strong>Chicken Alfredo</strong>
+            <p>Grilled chicken served over fettuccine pasta with creamy Alfredo sauce.</p>
+            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&h=150" alt="Chicken Alfredo">
+        </li>
+        <li>
+            <strong>Vegetable Stir-Fry</strong>
+            <p>Fresh seasonal vegetables sautéed in a savory soy-ginger sauce.</p>
+            <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&h=150" alt="Vegetable Stir-Fry">
+        </li>
+    </ul>
+
+    <!-- Desserts Section -->
+    <h2>Desserts</h2>
+    <ul>
+        <li>
+            <strong>Chocolate Fondue</strong>
+            <p>Assorted fruits and marshmallows served with rich chocolate fondue.</p>
+            <img src="https://images.pexels.com/photos/302680/pexels-photo-302680.jpeg?auto=compress&cs=tinysrgb&h=150" alt="Chocolate Fondue">
+        </li>
+        <li>
+            <strong>Cheesecake</strong>
+            <p>Creamy cheesecake with a graham cracker crust, topped with fresh berries.</p>
+            <img src="https://images.pexels.com/photos/302478/pexels-photo-302478.jpeg?auto=compress&cs=tinysrgb&h=150" alt="Cheesecake">
+        </li>
+        <li>
+            <strong>Tiramisu</strong>
+            <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+            <img src="https://images.pexels.com/photos/302680/pexels-photo-302680.jpeg?auto=compress&cs=tinysrgb&h=150" alt="Tiramisu">
+        </li>
+    </ul>
+
+    <!-- Contact Link -->
+    <p><a href="contact.html">Contact us for reservations</a></p>
+</body>
+</html>
