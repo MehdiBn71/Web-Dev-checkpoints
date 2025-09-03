@@ -1,0 +1,90 @@
+// --------------------
+// String Manipulation
+// --------------------
+
+// 1. Reverse a String
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+
+// 2. Count Characters
+function countCharacters(str) {
+  return str.length;
+}
+
+// 3. Capitalize Words
+function capitalizeWords(sentence) {
+  return sentence
+    .split(" ")
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
+// --------------------
+// Array Functions
+// --------------------
+
+// 4. Find Maximum
+function findMax(arr) {
+  return Math.max(...arr);
+}
+
+// 5. Find Minimum
+function findMin(arr) {
+  return Math.min(...arr);
+}
+
+// 6. Sum of Array
+function sumArray(arr) {
+  return arr.reduce((sum, num) => sum + num, 0);
+}
+
+// 7. Filter Array (example: keep only even numbers)
+function filterEvenNumbers(arr) {
+  return arr.filter(num => num % 2 === 0);
+}
+
+// --------------------
+// Mathematical Functions
+// --------------------
+
+// 8. Factorial
+function factorial(n) {
+  if (n < 0) return "Not defined";
+  if (n === 0) return 1;
+  return n * factorial(n - 1);
+}
+
+// 9. Prime Number Check
+function isPrime(num) {
+  if (num <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+
+// 10. Fibonacci Sequence
+function fibonacci(n) {
+  let sequence = [0, 1];
+  for (let i = 2; i < n; i++) {
+    sequence.push(sequence[i - 1] + sequence[i - 2]);
+  }
+  return sequence.slice(0, n); // return only n terms
+}
+
+// --------------------
+// Testing the functions
+// --------------------
+console.log("Reverse String:", reverseString("hello")); // olleh
+console.log("Count Characters:", countCharacters("hello")); // 5
+console.log("Capitalize Words:", capitalizeWords("hello world from js")); // Hello World From Js
+
+console.log("Max:", findMax([3, 7, 2, 9, 5])); // 9
+console.log("Min:", findMin([3, 7, 2, 9, 5])); // 2
+console.log("Sum:", sumArray([3, 7, 2, 9, 5])); // 26
+console.log("Filter Even Numbers:", filterEvenNumbers([1, 2, 3, 4, 5, 6])); // [2,4,6]
+
+console.log("Factorial of 5:", factorial(5)); // 120
+console.log("Is 7 Prime?:", isPrime(7)); // true
+console.log("Fibonacci (10 terms):", fibonacci(10)); // [0,1,1,2,3,5,8,13,21,34]
