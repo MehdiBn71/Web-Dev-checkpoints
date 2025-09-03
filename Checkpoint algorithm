@@ -1,0 +1,32 @@
+Algorithm SentenceAnalysis
+
+Variables:
+  length, words, vowels : integer
+  sentence : string
+  char : character
+
+Begin
+  Read(sentence)   // the sentence ends with '.'
+  
+  length ← 0
+  words ← 1        // words = spaces + 1
+  vowels ← 0
+
+  For i ← 1 to length(sentence) Do
+      char ← sentence[i]
+      length ← length + 1
+
+      If char = ' ' Then
+         words ← words + 1
+      EndIf
+
+      If char ∈ {a, e, i, o, u, A, E, I, O, U} Then
+         vowels ← vowels + 1
+      EndIf
+  EndFor
+
+  Write("Length of the sentence = ", length)
+  Write("Number of words = ", words)
+  Write("Number of vowels = ", vowels)
+
+End
