@@ -1,0 +1,74 @@
+#Problem 1
+
+Variables:
+  set1, set2 : arrays of integers
+  n1, n2 : integer
+  i, j : integer
+  sum : integer
+  found : boolean
+
+Begin
+  Input n1, set1[1..n1]
+  Input n2, set2[1..n2]
+
+  sum ← 0
+
+  // Step 1: Elements of set1 not in set2
+  For i ← 1 to n1 Do
+      found ← false
+      For j ← 1 to n2 Do
+          If set1[i] = set2[j] Then
+              found ← true
+          EndIf
+      EndFor
+      If found = false Then
+          sum ← sum + set1[i]
+      EndIf
+  EndFor
+
+  // Step 2: Elements of set2 not in set1
+  For i ← 1 to n2 Do
+      found ← false
+      For j ← 1 to n1 Do
+          If set2[i] = set1[j] Then
+              found ← true
+          EndIf
+      EndFor
+      If found = false Then
+          sum ← sum + set2[i]
+      EndIf
+  EndFor
+
+  Write("Sum of distinct elements = ", sum)
+
+End
+
+#problem 2 
+
+
+Algorithm DotProductAndOrthogonal
+
+Variables:
+  v1[1..n], v2[1..n] : arrays of real
+  ps : real
+  n, i : integer
+
+Begin
+  Input n
+  Input v1[1..n]
+  Input v2[1..n]
+
+  ps ← 0
+  For i ← 1 to n Do
+      ps ← ps + v1[i] * v2[i]
+  EndFor
+
+  Write("Dot product = ", ps)
+
+  If ps = 0 Then
+     Write("The vectors are orthogonal.")
+  Else
+     Write("The vectors are NOT orthogonal.")
+  EndIf
+End
+
