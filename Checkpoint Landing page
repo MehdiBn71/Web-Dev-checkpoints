@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Store - Landing Page</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="landingpage.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="logo">MyStore</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <h1>Welcome to MyStore</h1>
+    <p>Your one-stop shop for the best products online.</p>
+    <a href="#products" class="cta-btn">Shop Now</a>
+  </section>
+
+  <!-- ===== PRODUCT SECTION ===== -->
+  <section id="products" class="products">
+  <h2>Our Products</h2>
+  <div class="product-grid">
+    <!-- Product Card 1 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1585386959984-a41552262e4d?w=400" alt="Headphones">
+      <h3>Wireless Headphones</h3>
+      <p>High-quality sound with noise cancellation.</p>
+      <button class="shop-btn">Shop Now</button>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400" alt="Sneakers">
+      <h3>Sport Sneakers</h3>
+      <p>Comfortable and stylish running shoes.</p>
+      <button class="shop-btn">Shop Now</button>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400" alt="Smartphone">
+      <h3>Smartphone</h3>
+      <p>Latest model with amazing camera features.</p>
+      <button class="shop-btn">Shop Now</button>
+    </div>
+
+    <!-- Product Card 4 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=400" alt="Watch">
+      <h3>Classic Watch</h3>
+      <p>Elegant and timeless design for all occasions.</p>
+      <button class="shop-btn">Shop Now</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <p>&copy; 2025 MyStore. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:info@mystore.com">info@mystore.com</a></p>
+  </footer>
+
+</body>
+</html>
